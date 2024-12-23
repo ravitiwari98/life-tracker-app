@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Tracker App</title>
+  <link rel="stylesheet" href="Life_Tracker.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Life Tracker App</h1>
+    <p>Discover how precious your life is!</p>
+
+    <div class="input-section">
+      <label for="birthdate">Enter your Birthdate:</label>
+      <input type="date" id="birthdate" />
+
+      <label for="lifespan">Expected Lifespan (Years):</label>
+      <input type="number" id="lifespan" placeholder="e.g., 75" />
+
+      <button id="startBtn">Start Tracking</button>
+    </div>
+
+    <div id="results" class="hidden">
+      <h2>Time Details</h2>
+      <p><strong>Days Lived:</strong> <span id="daysLived">0</span></p>
+      <p><strong>Days Remaining:</strong> <span id="daysRemaining">0</span></p>
+      <p><strong>Seconds Remaining:</strong> <span id="secondsRemaining">0</span></p>
+
+      <h3>Motivational Reminder</h3>
+      <p id="motivation">Time is precious. Make every moment count!</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
